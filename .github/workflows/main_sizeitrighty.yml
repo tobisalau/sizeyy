@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: php-app
-          path: .
+          path: 'index.php'
 
   deploy:
     runs-on: ubuntu-latest
