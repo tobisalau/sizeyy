@@ -35,7 +35,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: php-app
-          path: 'index.php'
+          path: '.'
 
   deploy:
     runs-on: ubuntu-latest
@@ -56,5 +56,5 @@ jobs:
         with:
           app-name: 'sizeitrighty'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0E9AA71A357D4F8C931049C18962D4A6 }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
           package: .
