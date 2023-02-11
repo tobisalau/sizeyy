@@ -52,7 +52,7 @@
 <body>
 <?php
 
-/* $uname = $pword = "";
+/$uname = $pword = "";
 $firstErr = "";
 
 function errHan($error) {
@@ -84,7 +84,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     else {
         $pword = vali_input($_POST["pwrd"]);;
-    } */
+    } 
     
     // $connection = obdc_connect('DRIVER={ODBC Driver 18 for SQL Server};Server=tcp:sizeserver2.database.windows.net,1433;DATABASE=sizedb5;UID=ooas3;PWD=Password22!!;CONNECTION TIMEOUT=30;');
 }
@@ -112,7 +112,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <ul id="ups">
 
             <li>
-                <h1 id="named"><a href="index.html">SizeItRight</a> </h1>
+                <h1 id="named"><a href="index.php">SizeItRight</a> </h1>
             </li>
 
         </ul>
@@ -150,7 +150,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div id="page2intro">
         <section class="signin">
             <h2>Log in</h2>
-            <form method="post" action="<?php echo htmlspecialchars("index2.php");?>" id="loggy">
+            <form method="post" action="<?php echo htmlspecialchars("page2.php");?>" id="loggy">
                 <input type="text" class="input" name="username" placeholder="Username"><br>
                 <input type="password" class="input" name="pwrd" placeholder="Password"> <br>
                 <input type="submit" value="Submit" class="input">
